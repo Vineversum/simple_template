@@ -1,0 +1,89 @@
+.footer {
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-basis: 100%;
+    min-height: 235px;
+    margin-top: 30px;
+  }
+}
+
+.footer-left {
+  flex-basis: 40%;
+}
+
+.twitter-logo {
+  display: inline-block;
+}
+.twitter-definition {
+  display: inline-block;
+  h2 {
+    margin: 0 10px;
+    color: white;
+  }
+  p {
+    margin: 0 10px;
+    color: #858585;
+  }
+}
+.twitter-post {
+  margin: 20px 10px 0 35px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  p:first-of-type {
+    color: #858585;
+  }
+  p:last-of-type {
+    color: #0072b9;
+  }
+  ::before {
+    content: url("../img/twitter-speech-bubble.png");
+    position: absolute;
+    top: -18px;
+    left: 0px;
+  }
+}
+
+.footer-right {
+  flex-basis: 60%;
+  //  display: flex;
+  //  justify-content: center;
+  //  flex-wrap: wrap;
+  //
+  position: relative;
+}
+.copyright {
+  margin: 20px;
+  text-align: right;
+  p {
+    color: white;
+  }
+}
+.footer-logo1 {
+  display: inline-block;
+  max-width: 50%;
+  position: absolute;
+  left: 0;
+  img {
+    margin-left: 20px;
+    width: 100%;
+    height: auto;
+  }
+}
+  .footer-logo2 {
+    //display: inline;
+    margin-left: 50px;
+    position: absolute;
+    right: 0;
+    img {
+
+    }
+  }

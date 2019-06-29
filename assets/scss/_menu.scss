@@ -1,0 +1,38 @@
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 100%;
+}
+.menu__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  right: 0;
+
+}
+.menu__list-item {
+  display: block;
+  margin: 0 8px;
+  font-size: 0.8rem;
+  text-align: center;
+  //background-color: #cc0000;
+  border-radius: 10px;
+
+
+  a {
+    text-decoration: none;
+    color: silver;
+    display: block;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+  &:first-of-type {
+    background: linear-gradient(to top, cornflowerblue, #0072b9);
+  }
+  &:not(:first-of-type):hover {
+    background-color: rgba(248,248,248,0.25);
+    border-radius: 10px;
+  }
+}

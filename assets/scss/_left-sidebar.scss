@@ -1,0 +1,17 @@
+.left-sidebar {
+  //min-height: 325px;
+  flex-basis: 35%;
+  padding: 0 15px;
+  background-color: $bg-color;
+
+  ul {
+    list-style-image: url(../img/main-list-arrow.png);
+    padding-left: 18px;
+
+  }
+  li {
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 1px solid $grey-border;
+  }
+}
