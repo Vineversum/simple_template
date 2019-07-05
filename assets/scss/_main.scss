@@ -4,7 +4,15 @@
   flex-basis: 65%;
   padding: 0 15px;
   border-left: 1px solid $grey-border;
+
+  i {
+    color: black;
+  }
 }
-i {
-  color: black;
+
+
+@media (max-width: 768px) {
+  .main {
+    order: 2;
+  }
 }
