@@ -23,14 +23,19 @@
 }
 .twitter-definition {
   display: inline-block;
-  h2 {
+  b {
     margin: 0 10px;
     color: white;
+    font-size: 1.5rem;
   }
   p {
     margin: 0 10px;
     color: #858585;
+    i {
+      color: #0072b9;
+    }
   }
+  
 }
 .twitter-post {
   margin: 20px 10px 0 35px;
@@ -68,7 +73,7 @@
   }
 }
 .footer-logo1 {
-  display: inline-block;
+  // display: inline-block;
   max-width: 50%;
   position: absolute;
   left: 0;
@@ -85,5 +90,30 @@
     right: 0;
     img {
 
+    }
+  }
+
+  @media (max-width: 850px) {
+    .footer .menu {
+      display: none;
+    }
+    .footer .wrapper {
+      flex-direction: column;
+    }
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-logo1 {
+      display: none;
+    }
+    .footer-logo2 {
+      position: relative;
+      text-align: center;
+      margin: 0;
+    }
+    .copyright {
+      text-align: center;
+      // margin: 0;
     }
   }
