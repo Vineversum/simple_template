@@ -584,6 +584,7 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  padding: 10px;
   border: 5px solid white;
   background-image: url("../img/carousel-item-bg.png");
   background-position: 50% 50%;
@@ -597,6 +598,35 @@ ul {
   .carousel-content__right p,
   .carousel-content__right h1 {
     color: white; }
+
+.carousel-button.prev {
+  position: absolute;
+  top: calc(50% - 18px);
+  left: 0px; }
+  .carousel-button.prev a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+
+.carousel-button.next {
+  position: absolute;
+  top: calc(50% - 18px);
+  right: 0px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+  .carousel-button.next a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
 
 .left-sidebar {
   -ms-flex-preferred-size: 35%;
