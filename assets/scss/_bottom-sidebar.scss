@@ -37,9 +37,9 @@
   &__right::before {
     position: absolute;
     content: "";
-    top: 3px;
+    top: 0px;
+    height: 100%;
     left: 0;
-    height: 90%;
     border-right: 1px solid $border-color;
   }
 }
