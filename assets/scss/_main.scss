@@ -1,9 +1,7 @@
 .main {
-  //min-height: 325px;
-  background-color: $bg-color;
+  background-color: $light-color;
   flex-basis: 65%;
-  padding: 0 15px;
-  border-left: 1px solid $grey-border;
+  padding: 0 20px 15px 15px;
 
   i {
     color: black;
@@ -11,7 +9,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: $small) {
   .main {
     order: 2;
   }

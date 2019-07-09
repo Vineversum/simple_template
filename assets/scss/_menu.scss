@@ -3,7 +3,10 @@
   justify-content: flex-end;
   flex-basis: 100%;
   position: relative;
+
+  &
 }
+
 .menu__button {
   display: none;
   &-bar1,
@@ -21,7 +24,7 @@
   display: flex;
   justify-content: flex-end;
   right: 0;
-
+  color: $light-color;
 }
 .menu__list-item {
   display: block;
@@ -30,29 +33,34 @@
   text-align: center;
   border-radius: 10px;
   transition: background-color 0.25s;
+  
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 
   a {
     text-decoration: none;
     display: block;
-    font-weight: bold;
     height: 100%;
     width: 100%;
-    padding: 10px;
-    color: inherit;
+    padding: 12px;
+    color: $light-color;
   }
   
-  &:first-of-type {
-    background: linear-gradient(to top, cornflowerblue, #0072b9);
-    color: white;
+  &.active {
+    background: linear-gradient(to top, cornflowerblue, $accent-color);
   }
 
-  &:not(:first-of-type) {
-    color: silver;  
+  &:not(.active) {
+    color: $base-color;  
     &:hover {
       background-color: rgba(248,248,248,0.25);
     }
   }
 }
+
+
 
 @media (max-width: 850px) {
   .menu__button {
@@ -63,11 +71,10 @@
     position: absolute;
     z-index: 9;
     top: 100%;
+    left: -194px;
     width: 100vw;
-    left: 0;
     padding: 0;
     margin: 0;
-    left: -194px;
     background-color: rgba(0, 0, 0, 0.9);
   }
   .menu__list-item {

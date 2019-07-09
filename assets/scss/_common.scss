@@ -1,7 +1,9 @@
 * {
-
+  font-family: verdana, arial, sans-serif;
   box-sizing: border-box;
+  font-size: 12px;
 }
+
 body {
   background-image: url("../img/background.jpg");
   display: flex;
@@ -20,26 +22,22 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 15px;
-  background-color: rgba(248,248,248,0.25);
-}
-h1,
-p,
-ul {
-  font-family: 'Open Sans', sans-serif;
-}
-h1 {
-  margin: 10px 0;
-  color: rgb(14, 163, 222);
-}
-p,
-ul {
-  color: rgb(133, 133, 133);
-  font-size: 0.8rem;
-  line-height: 1.5;
+  padding: 18px 15px;
+  background-color: rgba(150, 150, 150, 0.3);
+  border: 1px solid rgb(98, 98, 98);
 }
 
-@media (max-width: 768px) {
+h1 {
+  color: $accent-color;
+  font-weight: normal;
+  font-size: 2rem;
+}
+p {
+  color: $base-color;
+  line-height: 1.75;
+}
+
+@media (max-width: $small) {
   .container {
     flex-direction: column;
   }

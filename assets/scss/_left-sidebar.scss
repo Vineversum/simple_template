@@ -1,22 +1,33 @@
 .left-sidebar {
-  //min-height: 325px;
+  position: relative;
   flex-basis: 35%;
   padding: 0 15px;
-  background-color: $bg-color;
+  background-color: $light-color;
 
   ul {
     list-style-image: url(../img/main-list-arrow.png);
     padding-left: 18px;
-
+    color: $base-color;
+    line-height: 1.75;
   }
   li {
     margin: 5px;
     padding: 5px;
-    border-bottom: 1px solid $grey-border;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15px;
+    bottom: 15px;
+    border-right: 1px solid $border-color;
+    // z-index: 1;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $small) {
   .left-sidebar {
     order: 3;
   }

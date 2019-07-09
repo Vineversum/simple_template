@@ -1,49 +1,50 @@
 .carousel {
-  //flex-basis: 100%;
   padding: 15px;
-  background-color: $bg-color;
+  background-color: $light-color;
   position: relative;
   width: 100%;
+
+  &-slides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid $border-color;
+    
+  }
 }
-.carousel-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  border: 5px solid white;
+
+
+.carousel-slide {
   background-image: url("../img/carousel-item-bg.png");
   background-position: 50% 50%;
   background-size: cover;
-  //height: 100%;
-  //width: 100%;
-}
-.carousel-content__left,
-.carousel-content__right {
-  padding: 15px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+ 
   p,
   h1 {
     color: white;
   }
-}
-.carousel-button.prev {
-  position: absolute;
-  top: calc(50% - 18px);
-  left: 0px;
-  a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+
+  &__right {
+    margin-left: 20px;
   }
 }
-.carousel-button.next {
+
+.carousel-button {
   position: absolute;
   top: calc(50% - 18px);
-  right: 0px;
-  transform: rotate(180deg);
+
+  &.prev {
+    left: 0px;
+  }
+  &.next {
+    transform: rotate(180deg);
+    right: 0px;
+  }
+
   a {
     display: block;
     height: 100%;
