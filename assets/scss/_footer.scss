@@ -18,6 +18,11 @@
   flex-basis: 40%;
 }
 
+.footer-right {
+  flex-basis: 60%;
+  position: relative;
+}
+
 .twitter-logo {
   display: inline-block;
 }
@@ -57,14 +62,7 @@
   }
 }
 
-.footer-right {
-  flex-basis: 60%;
-  //  display: flex;
-  //  justify-content: center;
-  //  flex-wrap: wrap;
-  //
-  position: relative;
-}
+
 .copyright {
   margin: 20px;
   text-align: right;
@@ -73,7 +71,6 @@
   }
 }
 .footer-logo1 {
-  // display: inline-block;
   max-width: 50%;
   position: absolute;
   left: 0;
@@ -84,7 +81,6 @@
   }
 }
   .footer-logo2 {
-    //display: inline;
     margin-left: 50px;
     position: absolute;
     right: 0;
@@ -111,6 +107,5 @@
     }
     .copyright {
       text-align: center;
-      // margin: 0;
     }
   }
