@@ -4,13 +4,13 @@
   position: relative;
   width: 100%;
 
-  &-slides {
+  &-slider {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
     border: 1px solid $border-color;
-    
+    // position: relative;
   }
 }
 
@@ -19,17 +19,19 @@
   background-image: url("../img/carousel-item-bg.png");
   background-position: 50% 50%;
   background-size: cover;
-  display: flex;
+  display: none;
   align-items: center;
   padding: 20px;
- 
   p,
-  h1 {
+  h2 {
     color: white;
   }
 
   &__right {
     margin-left: 20px;
+  }
+  &.active {
+    display: flex;
   }
 }
 
