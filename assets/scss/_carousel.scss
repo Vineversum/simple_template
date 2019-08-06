@@ -29,15 +29,20 @@
 
   &__right {
     margin-left: 20px;
+    flex-basis: 70%;
   }
   &.active {
     display: flex;
+  }
+  &__left img {
+    width: 100%;
   }
 }
 
 .carousel-button {
   position: absolute;
   top: calc(50% - 18px);
+  cursor: pointer;
 
   &.prev {
     left: 0px;
@@ -47,13 +52,11 @@
     right: 0px;
   }
 
-  a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+
+}
+
+@media (max-width: $small) {
+  .carousel-slide {
+    flex-wrap: wrap;
   }
 }
