@@ -25,6 +25,8 @@
   p,
   h2 {
     color: white;
+    overflow: hidden;
+    max-height: 80px;
   }
 
   &__right {
@@ -35,7 +37,7 @@
     display: flex;
   }
   &__left img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -58,5 +60,13 @@
 @media (max-width: $small) {
   .carousel-slide {
     flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    &__left {
+      flex-basis: 100%;
+    }
+    &__right {
+      flex-basis: 100%;
+    }
   }
 }
